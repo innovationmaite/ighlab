@@ -15,7 +15,7 @@ const FounderProfile = () => {
                 </div>
               </div>
               <img 
-                src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" 
+                src="/images/maite-gieskes.jpg" 
                 alt="Maite Gieskes" 
                 className="w-full h-auto object-cover transition-transform duration-300 group-hover:scale-105"
               />
