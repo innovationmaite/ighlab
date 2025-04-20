@@ -37,7 +37,7 @@ const Footer = () => {
                 <Twitter size={20} />
               </a>
               <a 
-                href="mailto:info@innovationglobalhealth.org" 
+                href="mailto:info@ighlab.org" 
                 className="text-gray-400 hover:text-white transition-colors"
                 aria-label="Email"
               >
@@ -74,7 +74,7 @@ const Footer = () => {
                   </a>
                 </li>
                 <li>
-                  <a href="mailto:info@innovationglobalhealth.org" className="text-gray-400 hover:text-white transition-colors">
+                  <a href="mailto:info@ighlab.org" className="text-gray-400 hover:text-white transition-colors">
                     Partner With Us
                   </a>
                 </li>

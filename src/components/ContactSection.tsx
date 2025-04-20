@@ -119,10 +119,10 @@ const ContactSection = () => {
                     For collaboration opportunities, partnerships, or questions about our mission:
                   </p>
                   <a 
-                    href="mailto:info@innovationglobalhealth.org" 
+                    href="mailto:info@ighlab.org" 
                     className="mt-1 inline-block text-blue-600 hover:text-purple-600 transition-colors hover:underline"
                   >
-                    info@innovationglobalhealth.org
+                    info@ighlab.org
                   </a>
                 </div>
               </div>
