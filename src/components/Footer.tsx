@@ -29,13 +29,13 @@ const Footer = () => {
               >
                 <Linkedin size={20} />
               </a>
-              <a 
+              {/* <a 
                 href="#" 
                 className="text-gray-400 hover:text-white transition-colors"
                 aria-label="Twitter"
               >
                 <Twitter size={20} />
-              </a>
+              </a> */}
               <a 
                 href="mailto:info@ighlab.org" 
                 className="text-gray-400 hover:text-white transition-colors"
