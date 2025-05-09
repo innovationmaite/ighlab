@@ -20,7 +20,7 @@ const HeroSection = () => {
           <p className="text-lg md:text-xl text-gray-700 max-w-3xl text-balance">
             A collaborative laboratory accelerating healthcare innovation across borders, 
             cultures, and disciplines to create lasting solutions for the world's most pressing 
-            health challenges aligned with UN Sustainable Development Goals.
+            health challenges aligned with UN SDGs.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 mt-4">
