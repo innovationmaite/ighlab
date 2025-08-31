@@ -9,17 +9,41 @@ import { Mail, MessageSquare, Send, Globe, Handshake } from 'lucide-react';
 const ContactSection = () => {
   const { toast } = useToast();
   
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // In a real application, you would handle the form submission here
-    toast({
-      title: "Message sent!",
-      description: "Thank you for reaching out. We'll get back to you soon.",
-    });
-    
-    // Reset form
+  
     const form = e.target as HTMLFormElement;
-    form.reset();
+    const formData = new FormData(form);
+  
+    try {
+      const response = await fetch("https://formspree.io/f/xvgbrabv", {
+        method: "POST",
+        body: formData,
+        headers: {
+          Accept: "application/json",
+        },
+      });
+  
+      if (response.ok) {
+        toast({
+          title: "Message sent!",
+          description: "Thank you for reaching out. We'll get back to you soon.",
+        });
+        form.reset();
+      } else {
+        toast({
+          title: "Oops!",
+          description: "Something went wrong. Please try again later.",
+          variant: "destructive",
+        });
+      }
+    } catch (error) {
+      toast({
+        title: "Error",
+        description: "Submission failed. Check your internet connection or try again later.",
+        variant: "destructive",
+      });
+    }
   };
 
   return (
@@ -148,7 +172,7 @@ const ContactSection = () => {
                 <div>
                   <h4 className="font-semibold text-lg">UN SDG Alignment</h4>
                   <p className="mt-1 text-gray-600">
-                    Our lab is committed to supporting the United Nations Sustainable Development Goals. 
+                    Our lab is committed to supporting the UN Sustainable Development Goals. 
                     We welcome partnerships with organizations and individuals working toward these shared 
                     global objectives, particularly in healthcare innovation and equity.
                   </p>
